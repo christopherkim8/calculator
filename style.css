@@ -19,7 +19,7 @@ body{
     height: 150px;
     width: 100%;
     padding: 20px;
-    font-size: 2rem;
+    font-size: 5rem;
     text-align: right;
     border: none;
     background-color: hsl(0, 0%, 20%);
@@ -37,8 +37,8 @@ body{
     padding: 25px;
 }
 button{
-    width:100px;
-    height: 100px;
+    width:100%;
+    aspect-ratio: 1 / 1;
     border-radius: 50px;
     border: none;
     background-color: hsl(0, 0%, 30%);
@@ -64,10 +64,19 @@ button:active{
 }
 @media (max-width: 600px) {
     #calculator {
-        width: 90%;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
     }
 
-    #keys button {
-        font-size: 3rem;
+    #display {
+        font-size: 2.5rem;
+        height: 100px;
+        padding: 10px;
+    }
+
+    #keys {
+        gap: 8px;
+        padding: 15px;
     }
 }

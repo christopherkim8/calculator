@@ -9,7 +9,7 @@ function appendToDisplay(input) {
 
 function clearDisplay() {
     display.value = "";
-    display.style.fontSize = "5rem";
+    display.style.fontSize = window.innerWidth <= 600 ? "2.5rem" : "5rem";
 }
 
 function calculate() {
@@ -51,11 +51,13 @@ document.addEventListener("keydown", function (event) {
 
 function resizeDisplayFont() {
     const length = display.value.length;
+    const isMobile = window.innerWidth <= 600;
+
     if (length > 16) {
-        display.style.fontSize = "2rem";
+        display.style.fontSize = isMobile ? "1.5rem" : "2rem";
     } else if (length > 10) {
-        display.style.fontSize = "3rem";
+        display.style.fontSize = isMobile ? "2.5rem" : "3rem";
     } else {
-        display.style.fontSize = "5rem";
+        display.style.fontSize = isMobile ? "4rem" : "5rem";
     }
 }

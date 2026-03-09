@@ -1,8 +1,8 @@
-# 🖩 Calculator Web App
+# Calculator Web App
 
 A simple calculator web application built with HTML, CSS, and JavaScript. It includes keyboard support.
 
-## 🔧 Features
+## Features
 
 - Real-time input and output display
 - Basic math operations: addition, subtraction, multiplication, division
@@ -12,6 +12,6 @@ A simple calculator web application built with HTML, CSS, and JavaScript. It inc
 - Responsive layout for desktop and mobile
 - Error handling for invalid expressions
 
-## 📸 Screenshot
+## Screenshot
 
 ![Calculator app preview](calculatorscreenshot.PNG)
